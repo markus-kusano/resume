@@ -1,0 +1,109 @@
+\documentclass[11pt,letter]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classicmod}                  
+% optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple',
+% 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% Hyperlinks
+\usepackage{hyperref}								% to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Markus}
+\familyname{Kusano}
+%\title{Resumé title (optional)}      % optional, remove the line if not wanted
+\address{13402 Alfred Mill Ct}{Herndon, VA 20171}
+%\mobile{+30 698 4385057}     % optional, remove the line if not wanted
+\phone{(571) 212-9696}        % optional, remove the line if not wanted
+%\fax{fax (optional)}         % optional, remove the line if not wanted
+\email{mukusano@vt.edu}       % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+%\homepage{http://gr.linkedin.com/pub/stefania-dakourou/41/21a/396}%{LinkedIn Profile}}                % optional, remove the line if not wanted
+\homepage{http://github.com/markus-kusano}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{Fall 2009 -- Spring 2014}{Computer Engineering}{Virginia Tech}{Blacksburg VA}{\textit{GPA: 3.9/4.0}}{}
+%\cventry{July 2011}{Master of Science in Integrated Hardware and Software Systems}{University of Patras}{}{\textit{9.5/10}}{}
+%\cventry{July 2009}{Diploma in Electrical Engineering and Computer Science}{University of Patras}{}{\textit{6.92/10}}{3 years BSc(Eng) + 2 years MSc(Eng)}  
+%\cventry{June 2002}{High School Diploma}{}{}{\textit{19.2/20}}{First class honours and scholarship}
+
+\section{Awards}
+\cvline{Deans List}{Listed on Dean's list every semester at Virginia Tech: Fall
+2009, Spring 2010, Fall 2011, Spring 2012, Fall 2012, Spring 2013}
+\cvline{Funding}{NSF REU Fellowship 2012-2013}
+\cvline{}{Travel Support to 2013 SRI Summer School on Formal Techniques}
+
+\section{Publications}
+\cvline{2013}{\emph{CCmutator: A mutation generator for concurrency constructs in multithreaded C/C++ applications,} Markus Kusano and Chao Wang. 28th IEEE/ACM International Conference on Automated Software Engineering. Palo Alto, CA, 2013}
+\cvline{Planned 2014}{\emph{Hybrid Static and Dynamic Guided Concurrent Software Testing,} planned submission to ISSTA 2014}
+
+\section{Presentations}
+\cvline{Nov 2013}{ASE 2013 Paper Presentation and Tool Demonstration}
+\cvline{Jul 2013}{Virginia Tech STEP 2013 Presentation}
+\cvline{Apr 2013}{CESCA Day Poster Presentation}
+
+\section{Research Experience}
+\cventry{Fall 2012}{Undergraduate Research Assistant}{Virginia Tech ECE Department}{Blacksburg VA}{}{Designed and implemented a supplemental static analysis algorithm to reduce the testing of redundant interleavings in dynamic systematic concurrent program analysis.}
+\cventry{Summer 2013}{}{}{}{}{Implemented the HaPSet algorithm in C++ for concurrent programs using POSIX threads\newline{} Implemented, using C++, python and Intel PIN, a dynamic partial order reduction algorithm for concurrent software testing.\newline{} Designed, implemented and tested a heuristic for state exploration reduction in dynamic concurrent software testing.}
+\cventry{Summer 2013}{}{}{}{}{Implemented partial and higher order mutation operators on LLVM bit code targeting POSIC and C++11 concurrency constructs.}
+\cventry{Summer - Fall 2012}{}{}{}{}{Created a repository of over 60 real world concurrency bugs in large scale software, wrote simplified test cases for bugs using POSIX threads.}
+
+\section{School Projects}
+\subsection{Embedded Systems}
+\cvline{Description}{Created an autonomous rover capable of creating a 2D map of its surroundings}
+\cvline{}{Designed and tested a communication protocol to be used between a PIC
+and ARM processor}
+\cvline{}{Wrote C code to implement wireless communication, sensor, motor
+controller, and shaft encoder interfaces on two 8-bit PIC processors}
+\cvline{}{Verified correct operation of the PICs using code instrumentation and
+a logic analyzer to create timing diagrams}
+
+\subsection{Digital Design II}
+\cvline{Description}{Used Modelsim+Quartus to simulate and synthesize verilog code}
+\cvline{}{Implemented modules to send data over SPI, decode modulated IR signals, and de-bounce electro-mechanical relays}
+
+\subsection{AMP Lab Mentor}
+\cvline{Description}{Mentored two students creating a rover which could be controlled and stream video over HTTP}
+
+\subsection{Other Projects}
+\cvline{}{Soldered surface mount and through-hole parts}
+\cvline{}{Implemented MIPS arithmetic instructions in verilog}
+\cvline{}{Created multi-threaded GUI applications in Qt}
+\cvline{}{Created an oscilloscope using a PIC32 micro-controller}
+\cvline{}{Designed and optimized boolean logic formulas for synchronous and asynchronous digital systems}
+
+\section{Skills}
+\cvline{Languages}{C, C++, \LaTeX, LLVM IR, Bash, Python, Verilog, Haskell, Scheme}
+\cvline{Applications and Libraries}{LLVM, Intel PIN, POSIX Threads, Autotools, GCC, GDB, git, Qt, Modelsim+Quartus}
+\end{document}
