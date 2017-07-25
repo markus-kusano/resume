@@ -1,0 +1,169 @@
+\documentclass[11pt,letter]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue,sans]{classic}
+% optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple',
+% 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% Hyperlinks
+%\usepackage[pdfpagelabels=false]{hyperref}								% to use hyperlinks
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Markus}
+\familyname{Kusano}
+%\title{Resumé title (optional)}      % optional, remove the line if not wanted
+\address{13402 Alfred Mill Ct}{Herndon, VA 20171}
+%\mobile{+30 698 4385057}     % optional, remove the line if not wanted
+\phone{(571) 212-9696}        % optional, remove the line if not wanted
+%\fax{fax (optional)}         % optional, remove the line if not wanted
+\email{mukusano@vt.edu}       % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+%\homepage{http://gr.linkedin.com/pub/stefania-dakourou/41/21a/396}%{LinkedIn Profile}}                % optional, remove the line if not wanted
+\homepage{www.github.com/markus-kusano}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2016--}{Ph.D.\ Computer Engineering}{Virginia Tech}{Blacksburg, VA}{GPA: 3.95/4}{Designing software testing and verification algorithms with an emphasis on concurrency.\\ Advisor: Chao Wang.}
+\cventry{2014--2016}{M.S.\ Computer Engineering}{Virginia Tech}{Blacksburg, VA}{GPA: 3.9/4}{}
+\cventry{2009--2014}{B.S.\ Computer Engineering}{Virginia Tech}{Blacksburg, VA}{GPA: 3.9/4, Rank: 4/84}{}
+%\cventry{July 2011}{Master of Science in Integrated Hardware and Software Systems}{University of Patras}{}{\textit{9.5/10}}{}
+%\cventry{July 2009}{Diploma in Electrical Engineering and Computer Science}{University of Patras}{}{\textit{6.92/10}}{3 years BSc(Eng) + 2 years MSc(Eng)}  
+%\cventry{June 2002}{High School Diploma}{}{}{\textit{19.2/20}}{First class honours and scholarship}
+
+\section{Work Experience}
+\cventry{Summer 2017}{Research Assistant}{Google}{New York City}{}{Designed automated testing algorithms to increase software reliability.}
+\cventry{Summer 2016}{Research Assistant}{Samsung Research America}{Mountain View, Cal}{}{Designed algorithms for automated reasoning of JavaScript.}
+\cventry{Summer 2014 and 2015}{Research Assistant}{NEC Labs America}{Princeton, NJ}{Autonomic Management Group}{Big data analytics for the detection of advanced persistent threats in enterprise networks.}
+
+
+\section{Skills}
+\cvline{Compilers}{Designed novel compiler algorithms to automatically find, detect, and repair bugs. Extensive use of LLVM for program analysis implementations.}
+\cvline{}{Used SMT solvers to automatically find repairs for buggy programs.}
+\cvline{}{Compiled webpages on-the-fly to be self-testing to expose bugs.}
+\cvline{}{Proved the theoretical correctness of analyses.}
+\cvline{}{Implemented correct-by-construction analyses using Datalog.}
+\cvline{Concurrency}{Extensive study of concurrency features in languages and potential bugs.}
+\cvline{}{Created tools to automatically find and repair concurrency bugs.}
+\cvline{Testing}{Developed automated testing tools using symbolic execution to generate test-inputs.}
+\cvline{Big Data}{Automatically analyzed and summarized multi-gigabyte graphs to provide end-user reports.}
+\cvline{Languages}{C, C++, JavaScript, Java, Haskell, Scheme, \LaTeX, Bash, Python, Verilog.}
+\cvline{Applications and Libraries}{LLVM, Intel PIN, Neo4j, node.js, POSIX Threads, CMake, Autotools, GCC, GDB, git, Qt, Modelsim+Quartus.}
+
+\section{Awards}
+\cvline{Funding}{NSF Graduate Research Fellowship (2016)}
+\cvline{}{Virginia Tech Bradley Fellowship (2014)}
+\cvline{}{NSF REU Fellowship (2012--2013)}
+\cvline{}{Travel Support to 2013 SRI Summer School on Formal Techniques}
+\cvline{Deans List}{Every semester at Virginia Tech}
+
+%\section{Publications}
+%\cvline{2016}{\emph{Conc-iSE: Incremental Symbolic Execution of Concurrent Software}, Shengjian Guo, Markus Kusano, and Chao Wang. ASE 2016.}
+%\cvline{}{\emph{Flow-sensitive Composition of Thread-modular Abstract Interpretation}, Markus Kusano, Chao Wang. FSE 2016.}
+%\cvline{}{\emph{Static DOM Event Dependency Analysis for Testing Web Applications}, Chungha Sung, Markus Kusano, Nishant Sinha, Chao Wang. FSE 2016.}
+%\cvline{2015}{\emph{Assertion Guided Symbolic Execution of Multithreaded Programs}, Shengjian Guo,
+%Markus Kusano, Chao Wang, Zijiang Yang, Aarti Gupta. FSE 2015.}
+%\cvline{}{\emph{ConcBugAssist: Constraint Solving for Diagnosis and Repair of Concurrent Bugs}, Sepideh Khoshnood, Markus Kusano, Chao Wang. ISSTA 2015.}
+%\cvline{}{\emph{Dynamic Partial Order Reduction for Relaxed Memory Models}, Naling Zhang, Markus Kusano, Chao Wang. PLDI 2015.}
+%\cvline{}{\emph{Dynamic Generation of Likely Invariants for Multithreaded Programs,} Markus Kusano, Arijit Chattopadhyay, and Chao Wang. ICSE 2015.}
+%\cvline{2014}{\emph{Assertion Guided Abstraction: A Cooperative Optimization for Dynamic Partial Order Reduction,} Markus Kusano and Chao Wang. ASE 2014.}
+%\cvline{2013}{\emph{CCmutator: A Mutation Generator for Concurrency Constructs in Multithreaded C/C++ Applications,} Markus Kusano and Chao Wang. ASE 2013.}
+
+%\cvline{2016}{\emph{Flow-sensitive Composition of Thread-modular Abstract Interpretation}, Markus Kusano, Chao Wang. 24th International Symposium on the Foundations of Software Engineering (FSE). Seattle, Washington, 2016.}
+%\cvline{}{\emph{Static DOM Event Dependency Analysis for Testing Web Applications}, Chungha Sung, Markus Kusano, Nishant Sinha, Chao Wang. 24th International Symposium on the Foundations of Software Engineering (FSE). Seattle, Washington, 2016.}
+%\cvline{2015}{\emph{Assertion Guided Symbolic Execution of Multithreaded Programs}, Shengjian Guo,
+%  Markus Kusano, Chao Wang, Zijiang Yang, Aarti Gupta. 23rd ACM SIGSOFT International Symposium on the
+%Foundations of Software Engineering (FSE). Bergamo, Italy, 2015.}
+%\cvline{}{\emph{ConcBugAssist: Constraint Solving for Diagnosis and Repair of Concurrent Bugs}, Sepideh Khoshnood, Markus Kusano, Chao Wang. 2015 International Symposium on Software Testing and Analysis (ISSTA). Baltimore, Maryland, 2015.}
+%\cvline{}{\emph{Dynamic Partial Order Reduction for Relaxed Memory Models}, Naling Zhang, Markus Kusano, Chao Wang. 36th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI). Portland, Oregan, 2015.}
+%\cvline{}{\emph{Dynamic Generation of Likely Invariants for Multithreaded Programs,} Markus Kusano, Arijit Chattopadhyay, and Chao Wang. 37th International Conference on Software Engineering (ICSE). Florence, Italy, 2015.}
+%\cvline{2014}{\emph{Assertion Guided Abstraction: A Cooperative Optimization for Dynamic Partial Order Reduction,} Markus Kusano and Chao Wang. 29th IEEE/ACM International Conference on Automated Software Engineering (ASE). V\"{a}ster\r{a}s, Sweden, 2014.}
+%\cvline{2013}{\emph{CCmutator: A Mutation Generator for Concurrency Constructs in Multithreaded C/C++ Applications,} Markus Kusano and Chao Wang. 28th IEEE/ACM International Conference on Automated Software Engineering (ASE). Palo Alto, CA, 2013.}
+
+
+%\section{Presentations}
+%\cvline{Sept. 2013}{ASE 2014 Paper Presentation.}
+%\cvline{Nov. 2013}{ASE 2013 Paper Presentation and Tool Demonstration.}
+%\cvline{Jul. 2013}{Virginia Tech STEP 2013 Presentation.}
+%\cvline{Apr. 2013}{CESCA Day Poster Presentation.}
+
+%\section{Research Experience}
+%\cventry{2012-- }{Research Assistant}{Virginia Tech ECE Department}{Blacksburg VA}{}{}
+%%2015
+%\cvline{}{Improved accuracy of thread-modular numerical abstract interpretation.}
+%\cvline{}{Improved runtime of symbolic execution using weakest precondition based summaries.}
+%
+%%2014
+%\cvline{}{Created concurrent fault localization and repair algorithms using symbolic model checkers.}
+%\cvline{}{Created a dynamic invariant generation framework for
+%multithreaded C/C++ programs.}
+%\cvline{}{Implemented a partial-order based stateless model checker for concurrent
+%programs.}
+%
+%%2013
+%\cvline{}{Formalized a new definition of dependence for partial-order reduction in model checking.}
+%\cvline{}{Designed heuristics for state exploration of concurrent programs.}
+%\cvline{}{Implemented partial and higher order mutation operators on LLVM bitcode.}
+%
+%%2012
+%\cvline{}{Created a repository of over 60 real world concurrency bugs in large scale software.}
+%
+%\section{Coursework}
+%\subsection{Testing and Verification of Digital Systems}
+%\cvline{}{Studied foundational analysis algorithms including explicit state model checking, test pattern generation, functional level testing, symbolic bounded model checking, symbolic execution, abstract interpretation, shape analysis, separation logic, and program synthesis.}
+%\cvline{}{Implemented fix-point algorithms for program analysis in Datalog.}
+%%\cvline{}{Used partial MAX-SAT solvers and model checkers to diagnose and repair software errors.}
+%
+%\subsection{Embedded Systems}
+%\cvline{}{Created an autonomous rover capable of creating a 2D map of its surroundings.}
+%\cvline{}{Designed and tested a communication protocol between a PIC
+%and ARM processor.}
+%\cvline{}{Wrote C code to implement wireless communication, sensor, motor
+%controller, and shaft encoder interfaces on two 8-bit PIC processors.}
+%\cvline{}{Tested PIC communication using code and
+%a logic analyzer to create timing diagrams.}
+%
+%\subsection{Digital Design II}
+%\cvline{}{Implemented Verilog modules to send data over SPI, decode modulated IR signals, and de-bounce electro-mechanical relays.}
+%\cvline{}{Designed and optimized boolean logic formulas for synchronous and asynchronous digital systems.}
+
+%\subsection{Other Projects}
+%\cvline{}{Soldered surface mount and through-hole parts.}
+%\cvline{}{Designed and optimized boolean logic formulas for synchronous and asynchronous digital systems.}
+
+%\section{Interests}
+%\cvline{Academic}{Software analysis, software engineering, functional programming.}
+%\cvline{Computers}{Maintain Gentoo Linux systems, enjoy learning about and
+%using Linux systems, and writing C software.}
+%\cvline{Memberships}{Virginia Tech Linux and Unix Users Group, IEEE Robotics, Virginia Tech AMP Lab Mentor.}
+
+\end{document}
