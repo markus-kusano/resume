@@ -1,9 +1,10 @@
-all: resume.tex resume_long.tex
+all: resume.tex resume_long.tex res.tex
 	latex resume.tex
 	dvipdf resume.dvi
 	latex resume_long.tex
 	dvipdf resume_long.dvi
 	pdflatex cv.tex
+	pdflatex res.tex
 
 read:
 	evince resume.pdf
@@ -13,3 +14,6 @@ readl:
 
 readc:
 	evince cv.pdf
+
+readr:
+	evince res.pdf
